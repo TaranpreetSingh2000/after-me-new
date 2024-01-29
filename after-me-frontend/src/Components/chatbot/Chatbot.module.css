@@ -54,3 +54,28 @@
     border-left-color: #9b59b6;  
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
+
+.robotContainer {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .chatbotpopup {
+    position: fixed;
+    top: 50%;
+    right: 6%;
+    bottom: 0;
+    left: 0;
+    /* display: flex; */
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .transition {
+    transition: transform 0.3s ease-in-out;
+  }
+  

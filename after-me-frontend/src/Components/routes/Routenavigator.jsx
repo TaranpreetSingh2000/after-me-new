@@ -44,7 +44,6 @@ const Routenavigator = () => {
           <Route path="/form" element={<Form updateFormData={updateFormData} />} />
           <Route path="/table" element={<Table formData={formData} />} />
           <Route path="/strapidata" element={<Strapidata />} />
-          {/* <Route path="/details/:id" element={<Details />} /> */}
         </Routes>
       </ApolloProvider>
     </Router>
