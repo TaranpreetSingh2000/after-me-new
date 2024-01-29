@@ -1,14 +1,14 @@
 import React from "react";
 
 import Routenavigator from "./Components/routes/Routenavigator";
-import Chabot from "./Components/chatbot/chabot";
+import Chatbot from "./Components/chatbot/Chatbot";
 
 const App = () => {
 
   return (
     <>
       <Routenavigator />
-      <Chabot/>
+      <Chatbot/>
     </>
   );
 };
