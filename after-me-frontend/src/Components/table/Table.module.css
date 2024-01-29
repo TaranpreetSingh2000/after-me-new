@@ -1,0 +1,18 @@
+.entries{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.strapilink{
+    color: #3a34bc;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btncontainers{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

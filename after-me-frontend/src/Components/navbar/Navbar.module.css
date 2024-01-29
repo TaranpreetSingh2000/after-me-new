@@ -1,0 +1,26 @@
+.navbar{
+    display: flex;
+    align-items: center ;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+.image{
+    width: 5rem;
+    height: 4rem;
+    cursor: pointer;
+}
+
+.profileicon{
+    border-radius: 18px;
+    width: 30px;
+}
+
+.profileSection{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}

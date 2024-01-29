@@ -1,0 +1,37 @@
+.formcontainer {
+    position: relative;
+    transition: filter 0.3s ease;
+
+}
+
+.modalcontainer {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    background-color: white;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 1rem 2rem;
+
+}
+
+.blur {
+    pointer-events: none;
+    filter: blur(1px);
+}
+
+.fax{
+    color: red;
+    font-size: 30px;
+}
+
+.alertpopupmessage{
+    font-size: 25px;
+    font-family: monospace;
+    color: revert;
+}

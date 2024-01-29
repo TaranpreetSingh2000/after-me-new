@@ -1,0 +1,138 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form_container {
+  width: 40%;
+  background-color: #F3F3F3;
+
+}
+
+.main-form-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-form-header h3 {
+  font-size: 18px;
+  color: #1d244f;
+  font-weight: 600;
+}
+
+.container-fluid img {
+  border-radius: 18px;
+  width: 30px;
+}
+
+.right-header-panel {
+  color: #b0b2c1;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.main-form-header .right-header-panel a {
+  color: #3a34bc;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+#signinbtn {
+  background: linear-gradient(45deg, #5cc3ee 0, #5d91ef 29%, #5e5ef0 50%, #947be1 73%, #ca97d2 100%);
+  color: #fff;
+}
+
+#signinbtn:hover {
+  color: #000;
+  background: white;
+}
+
+
+#signupbtn {
+  background: linear-gradient(45deg, #5cc3ee 0, #5d91ef 29%, #5e5ef0 50%, #947be1 73%, #ca97d2 100%);
+  color: #fff;
+}
+
+#signupbtn:hover {
+  color: #000;
+  background: white;
+}
+
+#otpbtn {
+  background: white;
+}
+
+#otpbtn a {
+  color: #000;
+}
+
+#otpbtn:hover {
+  background: linear-gradient(45deg, #5cc3ee 0, #5d91ef 29%, #5e5ef0 50%, #947be1 73%, #ca97d2 100%);
+   a {
+    color: #fff;
+  } 
+}
+
+button a {
+  text-decoration: none;
+}
+
+.otp {
+  background-color: #F3F3F3;
+}
+
+.otp h5 {
+  font-family: math;
+  font-size: 18px;
+  color: black;
+}
+
+#otpverify,
+#mobilelogin {
+  background-color: #fff;
+  color: #000;
+  text-transform: uppercase;
+}
+
+#mobilelogin:hover, #otpverify:hover{
+  background: linear-gradient(45deg, #5cc3ee 0, #5d91ef 29%, #5e5ef0 50%, #947be1 73%, #ca97d2 100%);
+  color: #fff;
+}
+
+.otp p {
+  font-size: 13px;
+}
+
+@media screen and (max-width: 1000px) {
+  .form_container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form_container {
+    width: 65%;
+  }
+
+  .main-form-header {
+    flex-direction: column;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .form_container {
+    width: 70%;
+  }
+
+  .main-form-header {
+    flex-direction: column;
+  }
+}
