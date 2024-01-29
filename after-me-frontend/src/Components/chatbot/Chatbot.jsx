@@ -50,10 +50,10 @@ export default function Chatbot() {
                   value={question}
                   onChange={handleQuestionChange}
                 />
-                <button className={`btn btn-primary my-2 ${style.chatbotsubmitbtn}`} onClick={handleSubmit}>Submit</button>
+                <button className={`btn btn-primary my-1 ${style.chatbotsubmitbtn}`} onClick={handleSubmit}>Submit</button>
               </div>
               {result && (
-                <p className="mt-1 font-weight-bold px-4">
+                <p className="font-weight-bold px-4">
                   {result}
                 </p>
               )}
