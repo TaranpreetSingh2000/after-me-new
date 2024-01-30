@@ -43,7 +43,7 @@ const Loginfile = () => {
               </label>
             </div>
             <p className="text-end mt-2">
-              <Link to="/">Forgot Password</Link>
+              <Link to="/signup">Forgot Password</Link>
             </p>
           </div>
 
