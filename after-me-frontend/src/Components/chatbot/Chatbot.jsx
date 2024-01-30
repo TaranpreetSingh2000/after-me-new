@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { Col } from "react-bootstrap";
-import style from './Chatbot.module.css'
+import style from './Chatbot.module.css';
+import robotchat from '../../assets/robotchatbot.png';
 
 export default function Chatbot() {
   const [result, setResult] = useState("");
   const [question, setQuestion] = useState("");
   const [isVisible, setIsVisible] = useState(false);
+  const [isRobotVisible, setIsRobotVisible] = useState(false);
+
 
   const handleQuestionChange = (event) => {
     setQuestion(event.target.value);
@@ -37,24 +40,28 @@ export default function Chatbot() {
     setIsVisible(!isVisible);
   };
 
-  // useEffect(() => {
-  //   const timeoutId = setTimeout(() => {
-  //     setIsVisible(true);
-  //   }, 5000);
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsRobotVisible(true);
+    }, 2000);
 
-  //   return () => clearTimeout(timeoutId);
-  // }, []);
+    return () => clearTimeout(timeoutId);
+  }, []);
+
 
   return (
     <div>
-      <div className={`robot-container ${style.robotContainer}`}>
-        <img
-          src="https://media.istockphoto.com/id/1359585151/photo/cute-blue-robot-giving-thumbs-up-3d.jpg?s=612x612&w=0&k=20&c=xAekoyOf_aboQimdNlGawCGT6uS-N8ELK-PLzMhNvdw="
-          width="100px"
-          alt="robot"
-          onClick={handleToggleChatbot}
-        />
-      </div>
+      {isRobotVisible && (
+        <div className={`robot-container ${style.robotContainer}`}>
+          <p className={`chatmessage ${style.chatmessage}`}>Hi there 👋<br /> How can I help you today?</p>
+          <img
+            src={robotchat}
+            width="100px"
+            alt="robot"
+            onClick={handleToggleChatbot}
+          />
+        </div>
+      )}
       {isVisible && (
         <div className={`chatbot-popup ${style.chatbotpopup}`}>
           <div className={`page-content page-container mb-5 mx-3 ${style.transition}`} id="page-content">
@@ -63,7 +70,7 @@ export default function Chatbot() {
                 <Col md={4}>
                   <div className="card card-bordered">
                     <div className="card-header">
-                      <h5 className={`card-title ${style.cardTitle}`}>How Can I help You?</h5>
+                      <h5 className={`card-title ${style.cardTitle}`}>Ask your query?</h5>
                     </div>
                     <div className="publisher bt-1 border-light px-4 py-3">
                       <img
