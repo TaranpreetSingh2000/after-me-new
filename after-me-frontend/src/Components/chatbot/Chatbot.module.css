@@ -1,9 +1,10 @@
-.cardTitle{
+.cardTitle {
     font-family: none;
     font-size: larger;
     font-style: italic;
     margin-bottom: 0 !important;
 }
+
 .chatbotsubmitbtn {
     background: linear-gradient(45deg, #5cc3ee 0, #5d91ef 29%, #5e5ef0 50%, #947be1 73%, #ca97d2 100%);
     color: #fff;
@@ -44,38 +45,67 @@
 }
 
 .chatbotsubmitbtn:hover::before {
-    border-top-color: #9b59b6;  
-    border-right-color: #9b59b6; 
+    border-top-color: #9b59b6;
+    border-right-color: #9b59b6;
     transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
 }
 
 .chatbotsubmitbtn:hover::after {
-    border-bottom-color: #9b59b6; 
-    border-left-color: #9b59b6;  
+    border-bottom-color: #9b59b6;
+    border-left-color: #9b59b6;
     transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
 }
 
 .robotContainer {
     position: fixed;
-    top: 50%;
+    bottom: 10%;
     right: 0;
     transform: translateY(-50%);
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .chatbotpopup {
+}
+
+.chatbotpopup {
     position: fixed;
     top: 50%;
     right: 6%;
     bottom: 0;
     left: 0;
-    /* display: flex; */
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .transition {
+}
+
+.chatmessage {
+    position: fixed;
+    bottom: 60%;
+    right: 8%;
+    padding: 2px;
+    font-size: 13px;
+    transform: translateY(-50%);
+    animation: mymove 3s infinite;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.04),
+        0px 3px 6px 0px rgba(0, 0, 0, 0.1);
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.transition {
     transition: transform 0.3s ease-in-out;
-  }
-  
+}
+
+.robotContainer img {
+    animation: mymove 3s infinite;
+}
+
+@keyframes mymove {
+    0% {
+        transform: translateY(100%);
+    }
+
+    50% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
