@@ -87,7 +87,7 @@
         0px 3px 6px 0px rgba(0, 0, 0, 0.1);
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+    border-radius: 0% 0% 30% 0%;
 }
 
 .robotContainer img {
