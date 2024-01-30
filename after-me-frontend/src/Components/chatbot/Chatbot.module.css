@@ -68,9 +68,11 @@
 .chatbotpopup {
     position: fixed;
     top: 50%;
-    right: 6%;
+    right: 7%;
     bottom: 0;
     left: 0;
+    transform: scaleY(150deg);
+    transition: transform 0.5s ease-in-out;
 }
 
 .chatmessage {
@@ -86,10 +88,6 @@
     font-style: italic;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-}
-
-.transition {
-    transition: transform 0.3s ease-in-out;
 }
 
 .robotContainer img {
