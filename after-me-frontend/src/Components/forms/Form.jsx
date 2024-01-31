@@ -34,7 +34,7 @@ const Form = ({ updateFormData }) => {
                 lname: '',
                 fathername:'',
                 mobile: '',
-                dob: '',
+                dob: '',    
                 address: '',
                 pincode: '',
                 gender: '',
